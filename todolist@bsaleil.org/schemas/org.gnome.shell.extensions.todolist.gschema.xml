@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schemalist>
+	<schema path="/org/gnome/shell/extensions/todolist/" id="org.gnome.shell.extensions.todolist" >
+		<key type="as" name="open-todolist">
+			<default><![CDATA[['<Control><Alt>space']]]></default>
+			<summary>The key you want to open todolist.</summary>
+		</key>
+		<key type="b" name="clipboard">
+			<default>false</default>
+			<summary>Choose whether to copy the text of the removed list item to clipboard.</summary>
+		</key>
+	</schema>
+</schemalist>
