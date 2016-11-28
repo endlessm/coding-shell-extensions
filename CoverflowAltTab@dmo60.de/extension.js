@@ -52,7 +52,12 @@ function enable() {
                 platform = new Platform.PlatformGnomeShell310();
                 keybinder = new Keybinder.KeybinderNewGSApi();
             } else if(PACKAGE_VERSION >= "3.8.0") {
-                platform = new Platform.PlatformGnomeShell38();
+                // It seems the 3.14 codepath works better with eos-shell
+                if (PACKAGE_NAME == 'eos-shell') {
+                    platform = new Platform.PlatformGnomeShell314();
+                } else {
+                    platform = new Platform.PlatformGnomeShell38();
+                }
                 keybinder = new Keybinder.KeybinderNewGSApi();
             } else {
                 platform = new Platform.PlatformGnomeShell();
