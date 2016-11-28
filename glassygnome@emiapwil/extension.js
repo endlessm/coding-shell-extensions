@@ -269,9 +269,10 @@ function reset_window_opacity() {
 }
 
 function _add_keybinding(key, func) {
+    let mode = Shell.ActionMode ? Shell.ActionMode : Shell.KeyBindingMode;
     if (Main.wm.addKeybinding) {
         Main.wm.addKeybinding(key, settings, Meta.KeyBindingFlags.NONE,
-                              Shell.ActionMode.ALL, func);
+                              mode, func);
     } else {
         global.display.add_keybinding(key, settings, Meta.KeyBindingFlags.NONE, func);
     }
