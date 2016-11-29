@@ -138,7 +138,7 @@ function update_indicator_style() {
 
 function on_preferences() {
     // Show GNOME Shell preferences
-    Util.spawn(["gnome-shell-extension-prefs", "time_tracker_jsnjack@gmail.com"]);
+    Util.spawn(["eos-shell-extension-prefs", "time_tracker_jsnjack@gmail.com"]);
     return 0;
 }
 
