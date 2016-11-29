@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist >
+  <schema id="org.gnome.shell.extensions.time-tracker" path="/org/gnome/shell/extensions/time-tracker/">
+    <key name="start-time" type="s">
+      <default>'Time tracker'</default>
+      <summary>Start time</summary>
+      <description>Used to show difference with current time</description>
+    </key>
+    <key name="pause-start-time" type="s">
+      <default>''</default>
+      <summary>Pause start time</summary>
+      <description>Used to store pause start time</description>
+    </key>
+    <key name="pause-duration" type="i">
+      <default>0</default>
+      <summary>Pause duration</summary>
+      <description>Used to store pause duration</description>
+    </key>
+    <key name="paused" type="b">
+      <default>false</default>
+      <summary>Pause state indicator</summary>
+      <description>Shows if extension is in paused state</description>
+    </key>
+    <key name="show-seconds" type="b">
+      <default>false</default>
+      <summary>Show seconds</summary>
+      <description>Set to true to show seconds</description>
+    </key>
+    <key name="update-start-time" type="b">
+      <default>false</default>
+      <summary>Update start time</summary>
+      <description>Shows if start-time needs update</description>
+    </key>
+    <key name="update-indicator-style" type="b">
+      <default>false</default>
+      <summary>Update indicator style</summary>
+      <description>Updates indicator style if it was changed in settings</description>
+    </key>
+    <key name="indicator-color" type="s">
+      <default>'rgb(192, 192, 192)'</default>
+      <summary>Indicator color</summary>
+      <description>Color of the timer numbers</description>
+    </key>
+    <key name="indicator-paused-color" type="s">
+      <default>'rgb(33, 93, 156)'</default>
+      <summary>Paused indicator color</summary>
+      <description>Color of the numbers in paused state</description>
+    </key>
+  </schema>
+</schemalist>
