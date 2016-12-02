@@ -31,6 +31,10 @@ AC_SUBST(ENABLED_EXTENSIONS, [$ENABLED_EXTENSIONS])
 dnl Please keep this sorted alphabetically
 AC_CONFIG_FILES([
   extensions/CoverflowAltTab@dmo60.de/Makefile
+  extensions/glassygnome@emiapwil/Makefile
+  extensions/gradientbottombar@julienpecqueur.net/Makefile
+  extensions/time_tracker_jsnjack@gmail.com/Makefile
+  extensions/todolist@bsaleil.org/Makefile
   extensions/Makefile
   Makefile
 ])
