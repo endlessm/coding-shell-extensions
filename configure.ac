@@ -25,7 +25,7 @@ if test "$(($shell_minor % 2))" -eq 0; then
 fi
 AC_SUBST([SHELL_VERSION])
 
-ENABLED_EXTENSIONS="CoverflowAltTab@dmo60.de" 
+ENABLED_EXTENSIONS="CoverflowAltTab@dmo60.de glassygnome@emiapwil gradientbottombar@julienpecqueur.net time_tracker_jsnjack@gmail.com todolist@bsaleil.org"
 AC_SUBST(ENABLED_EXTENSIONS, [$ENABLED_EXTENSIONS])
 
 dnl Please keep this sorted alphabetically
