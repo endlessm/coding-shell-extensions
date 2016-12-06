@@ -1,4 +1,4 @@
-EXTENSION_ID = glossygnome
+EXTENSION_ID = glassy-gnome
 
 EXTRA_MODULES = convenience.js indicator.js 
 
