@@ -1,4 +1,3 @@
-#gschemas_in = schemas/$(gschemaname)gschema.xml.in
 
 gsettings_SCHEMAS = schemas/$(gschemaname).gschema.xml
 
