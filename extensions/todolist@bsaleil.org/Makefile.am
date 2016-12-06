@@ -12,4 +12,3 @@ schemas/gschemas.compiled: schemas/org.gnome.shell.extensions.todolist.gschema.x
 include ../../extension.mk
 include ../../settings.mk
 
-CLEANFILES += schemas/gschemas.compiled
