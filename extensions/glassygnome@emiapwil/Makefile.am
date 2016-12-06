@@ -1,4 +1,5 @@
-EXTENSION_ID = glassy-gnome
+EXTENSION_ID = glassygnome@emiapwil
+SCHEMA_ID = glassy-gnome
 
 EXTRA_MODULES = convenience.js indicator.js 
 
