@@ -1,4 +1,5 @@
-EXTENSION_ID = time-tracker
+EXTENSION_ID = time_tracker_jsnjack@gmail.com
+SCHEMA_ID = time-tracker
 
 EXTRA_MODULES=  convenience.js prefs.js
 
