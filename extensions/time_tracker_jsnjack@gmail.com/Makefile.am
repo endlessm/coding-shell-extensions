@@ -1,4 +1,4 @@
-EXTENSION_ID = time_tracker_jsnjack
+EXTENSION_ID = time-tracker
 
 EXTRA_MODULES=  convenience.js prefs.js
 
