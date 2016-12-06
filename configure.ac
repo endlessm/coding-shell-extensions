@@ -1,5 +1,5 @@
 AC_PREREQ(2.63)
-AC_INIT([gnome-shell-extensions],[3.4.0],[https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-shell&component=extensions])
+AC_INIT([coding-shell-extensions],[0.0])
 
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_AUX_DIR([config])
@@ -8,10 +8,9 @@ AM_INIT_AUTOMAKE([1.10 dist-bzip2 no-dist-gzip foreign tar-ustar])
 
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
-GETTEXT_PACKAGE=gnome-shell-extensions
+GETTEXT_PACKAGE=coding-shell-extensions
 AC_SUBST(GETTEXT_PACKAGE)
-AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE",
-                   [The prefix for our gettext translation domains.])
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE")
 
 PKG_PROG_PKG_CONFIG([0.22])
 
@@ -28,7 +27,6 @@ AC_SUBST([SHELL_VERSION])
 ENABLED_EXTENSIONS="CoverflowAltTab@dmo60.de glassygnome@emiapwil gradientbottombar@julienpecqueur.net time_tracker_jsnjack@gmail.com todolist@bsaleil.org"
 AC_SUBST(ENABLED_EXTENSIONS, [$ENABLED_EXTENSIONS])
 
-dnl Please keep this sorted alphabetically
 AC_CONFIG_FILES([
   extensions/CoverflowAltTab@dmo60.de/Makefile
   extensions/glassygnome@emiapwil/Makefile
