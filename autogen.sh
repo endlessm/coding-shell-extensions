@@ -7,7 +7,7 @@ PKG_NAME="coding-shell-extensions"
 
 test -f $srcdir/configure.ac || {
     echo -n "**Error**: Directory "\`$srcdir\'" does not look like the"
-    echo " top-level gnome-shell-extensions directory"
+    echo " top-level $(PKG_NAME) directory"
     exit 1
 }
 
