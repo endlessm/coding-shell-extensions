@@ -16,7 +16,6 @@ PKG_PROG_PKG_CONFIG([0.22])
 
 GLIB_GSETTINGS
 
-SHELL_VERSION="$PACKAGE_VERSION"
 shell_major=`echo "$PACKAGE_VERSION" | cut -d'.' -f1`
 shell_minor=`echo "$PACKAGE_VERSION" | cut -d'.' -f2`
 if test "$(($shell_minor % 2))" -eq 0; then
