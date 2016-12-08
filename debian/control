@@ -4,12 +4,10 @@ Priority: optional
 Maintainer: Lili Cosic <lili@kinvolk.io>
 Build-Depends: debhelper (>= 9), autotools-dev
 Standards-Version: 3.9.5
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/coding-shell-extensions.git
-#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/coding-shell-extensions.git;a=summary
+Homepage: endlessm.org
+Vcs-Browser: https://github.com/endlessm/coding-shell-extensions
 
 Package: coding-shell-extensions
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Shell extensions for Coding game
