@@ -6,19 +6,23 @@
 // Licence: GPLv2+
 
 const Gio = imports.gi.Gio;
-const Extension = imports.misc.extensionUtils.getCurrentExtension();
+const ExtensionUtils = imports.misc.extensionUtils;
 
 function getSettings()
 {
-	let dir = Extension.dir.get_child('schemas').get_path();
-	let source = Gio.SettingsSchemaSource.new_from_directory(dir,
-			Gio.SettingsSchemaSource.get_default(),
-			false);
+	let extension = ExtensionUtils.getCurrentExtension();
+	schema = schema || extension.metadata['settings-schema'];
 
-	if(!source)
-		throw new Error('Error Initializing the thingy.');
+	const GioSSS = Gio.SettingsSchemaSource;
+	
+	let schemaDir = extension.dir.get_child('schemas');
+	let schemaSource;
+	if (schemaDir.query_exists(null))
+		schemaSource = GioSSS.new_from_directory(schemaDir.get_path(), GioSSS.get_default(), false);
+	else
+		schemaSource = GioSSS.get_default();
 
-	let schema = source.lookup('org.gnome.shell.extensions.todolist', false);
+	let schema = schemaSource.lookup('org.gnome.shell.extensions.todolist', false);
 
 	if(!schema)
 		throw new Error('Schema missing.');
@@ -27,3 +31,4 @@ function getSettings()
 		settings_schema: schema
 	});
 }
+
