@@ -23,9 +23,6 @@ if test "$(($shell_minor % 2))" -eq 0; then
 fi
 AC_SUBST([SHELL_VERSION])
 
-ENABLED_EXTENSIONS="CoverflowAltTab@dmo60.de glassygnome@emiapwil gradientbottombar@julienpecqueur.net time_tracker_jsnjack@gmail.com todolist@bsaleil.org"
-AC_SUBST(ENABLED_EXTENSIONS, [$ENABLED_EXTENSIONS])
-
 AC_CONFIG_FILES([
   extensions/CoverflowAltTab@dmo60.de/Makefile
   extensions/glassygnome@emiapwil/Makefile
