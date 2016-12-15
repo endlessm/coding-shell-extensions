@@ -1,3 +1,9 @@
+coding-shell-extensions (0.1-1) unstable; urgency=low
+
+  * Bump
+
+ -- Krzesimir Nowak <krzesimir@kinvolk.io>  Thu, 15 Dec 2016 19:47:34 +0000
+
 coding-shell-extensions (0.0-1) unstable; urgency=low
 
   * Initial release
