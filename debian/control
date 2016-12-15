@@ -1,13 +1,19 @@
 Source: coding-shell-extensions
-Section: unknown
-Priority: optional
+Priority: standard
 Maintainer: Lili Cosic <lili@kinvolk.io>
-Build-Depends: debhelper (>= 9), autotools-dev, gnome-common, libglib2.0-dev
+Build-Depends: debhelper (>= 9),
+	       dh-autoreconf,
+	       autotools-dev,
+	       gnome-common,
+	       libglib2.0-dev
 Standards-Version: 3.9.5
-Homepage: endlessm.org
+Section: non-free/libs
+Homepage: http://www.endlessm.com
 Vcs-Browser: https://github.com/endlessm/coding-shell-extensions
 
 Package: coding-shell-extensions
+Section: non-free/libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends},
+	 ${misc:Depends}
 Description: Shell extensions for Coding game
