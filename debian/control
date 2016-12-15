@@ -1,0 +1,13 @@
+Source: coding-shell-extensions
+Section: unknown
+Priority: optional
+Maintainer: Lili Cosic <lili@kinvolk.io>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.5
+Homepage: endlessm.org
+Vcs-Browser: https://github.com/endlessm/coding-shell-extensions
+
+Package: coding-shell-extensions
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Shell extensions for Coding game
