@@ -26,7 +26,7 @@ const ExtensionSettings = Utils.getSettings(); // Get settings from utils.js
 const MAX_LENGTH = 100;
 const KEY_RETURN = 65293;
 const KEY_ENTER  = 65421;
-const BASE_TASKS = "Do something\nDo something else\nDo more stuff\nDo that again\n";
+const BASE_TASKS = "Do something\nDo something else\n1CF86\nDo that again\n";
 
 const Clipboard = St.Clipboard.get_default();
 const CLIPBOARD_TYPE = St.ClipboardType.CLIPBOARD;
